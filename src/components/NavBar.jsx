@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import useAuth from "../hooks/useAuth";
 import { toast } from "react-toastify";
-import {
-  FaUserCircle,
-  FaSignOutAlt,
-  FaTachometerAlt,
-} from "react-icons/fa";
+import { FaUserCircle, FaSignOutAlt, FaTachometerAlt } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 import Mainlogo from "../pages/logo";
 
@@ -59,7 +55,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className="navbar bg-white rounded-xl w-11/12 mx-auto mt-4 border-2 shadow-2xl px-4">
+    <div className="navbar bg-white rounded-xl w-11/12 mx-auto mt-4 border-2 shadow-2xl px-4 fixed top-0 left-0 right-0 z-50">
       {/* Drawer for small devices */}
       <div className="drawer lg:hidden">
         <input id="nav-drawer" type="checkbox" className="drawer-toggle" />
