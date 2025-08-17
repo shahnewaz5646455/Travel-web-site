@@ -1,11 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaLink,
-} from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaLink } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiFirebase,
@@ -36,7 +31,7 @@ export default function AboutUs() {
         </motion.div>
 
         {/* Developer Info */}
-     <DeveloperCard></DeveloperCard>
+        <DeveloperCard></DeveloperCard>
 
         {/* Tech Stack */}
         <div className="mt-16">
@@ -44,18 +39,24 @@ export default function AboutUs() {
             🔧 Tech Stack
           </h2>
           <div className="flex flex-wrap justify-center gap-6 text-4xl text-green-300">
-            {[FaHtml5, FaCss3Alt, SiTailwindcss, FaReact, SiFirebase, SiMongodb, SiJsonwebtokens].map(
-              (Icon, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.2, rotate: 10 }}
-                  animate={{ y: [0, -5, 0] }}
-                  transition={{ repeat: Infinity, duration: 3 + i }}
-                >
-                  <Icon title="Tech" />
-                </motion.div>
-              )
-            )}
+            {[
+              FaHtml5,
+              FaCss3Alt,
+              SiTailwindcss,
+              FaReact,
+              SiFirebase,
+              SiMongodb,
+              SiJsonwebtokens,
+            ].map((Icon, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.2, rotate: 10 }}
+                animate={{ y: [0, -5, 0] }}
+                transition={{ repeat: Infinity, duration: 3 + i }}
+              >
+                <Icon title="Tech" />
+              </motion.div>
+            ))}
           </div>
         </div>
 
@@ -71,19 +72,21 @@ export default function AboutUs() {
               whileHover={{ scale: 1.03 }}
             >
               <img
-                src="https://i.postimg.cc/NM7YXDFZ/Screenshot-2025-06-20-000240.png"
-                alt="Subscribe Box Project"
+                src="https://i.postimg.cc/YCqW0Rzs/Screenshot-2025-08-09-163326.png"
+                alt="thinkfast Project"
                 className="w-full h-52 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Subscribe Box
+                  ThinkFast - Assignment Management Platform
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
-                  Newsletter subscription app built with TailwindCSS and React.
+                  Welcome to ThinkFast! A modern, user-friendly web application
+                  for managing assignments, submissions, and collaborative
+                  learning.
                 </p>
                 <a
-                  href="https://subscribe-box-002.netlify.app/"
+                  href=" https://think-fast00.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-blue-600 hover:underline font-medium"
